@@ -1,3 +1,5 @@
+Found by danktrain#0001 for the community and 3NAME Development
+
 **NAME STATUS**
 
 GET https://api.minecraftservices.com/minecraft/profile/name/asd/available
