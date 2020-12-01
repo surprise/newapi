@@ -4,7 +4,7 @@ Found by danktrain#0001 and Duff#8240 for the community, 3NAME Development, and 
 
 Method:GET
 
-URL: https://api.minecraftservices.com/minecraft/profile/name/asd/available
+URL: https://api.minecraftservices.com/minecraft/profile/name/WANTEDNAMEHERE/available
 
 You only have to send the bearer token aswell as the typical headers
 
@@ -76,7 +76,7 @@ Response Body:
 **CHANGE NAME:**
 
 Method: PUT
-URL: https://api.minecraftservices.com/minecraft/profile/name/<name>
+URL: https://api.minecraftservices.com/minecraft/profile/name/WANTEDNAMEHERE
 
 You only have to send the bearer token aswell as the typical headers
 
