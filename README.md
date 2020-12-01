@@ -1,12 +1,11 @@
-Found by danktrain#0001 for the community and 3NAME Development
+Found by danktrain#0001 and Duff#8240 for the community and 3NAME Development and MCSniperPY
 
-**NAME STATUS**
+**NAME STATUS:**
 
-GET https://api.minecraftservices.com/minecraft/profile/name/asd/available
+Method:GET 
+URL: https://api.minecraftservices.com/minecraft/profile/name/asd/available
 
-bearer in headers
-
-200 ok
+You only have to send the bearer token aswell as the typical headers
 
 if taken/blocked:
 ```
@@ -16,6 +15,7 @@ if taken/blocked:
 ```
 
 if available:
+200 Ok
 ```
 {
   "status" : "AVAILABLE"
@@ -29,12 +29,14 @@ if innappropriate:
 }
 ```
 
-**ACCOUNT NAMECHANGE ELIGIBILITY**
+**ACCOUNT NAMECHANGE ELIGIBILITY:**
 
-GET https://api.minecraftservices.com/minecraft/profile/namechange
+Method:GET
+URL: https://api.minecraftservices.com/minecraft/profile/namechange
 
-bearer in headers
+You only have to send the bearer token aswell as the typical headers
 
+Response Body when successful:
 200 ok
 ```
 {
@@ -44,13 +46,15 @@ bearer in headers
 }
 ```
 
-**ACCOUNT DATA**
+**ACCOUNT DATA:**
 
-GET https://api.minecraftservices.com/minecraft/profile
+Method: GET
+URL: https://api.minecraftservices.com/minecraft/profile
 
-bearer of my alt "ecksessdee" in headers
+You only have to send the bearer token aswell as the typical headers
 
-resp: 200 ok
+Response Body: 
+200 OK
 
 ```
 {
@@ -66,15 +70,15 @@ resp: 200 ok
 }
 ```
 
-**CHANGE NAME**
+**CHANGE NAME:**
 
-PUT https://api.minecraftservices.com/minecraft/profile/name/wantedname
+Method: PUT
+URL: https://api.minecraftservices.com/minecraft/profile/name/<name>
 
-200 OK
-
-bearer in headers
+You only have to send the bearer token aswell as the typical headers
 
 resp body:
+200 OK
 ```
 {
   "id" : uuid,
@@ -118,11 +122,12 @@ resp body:
 
 DELETE https://api.minecraftservices.com/minecraft/profile/skins/active
 
-200 OK
 
-bearer in headers
+
+You only have to send the bearer token aswell as the typical headers
 
 resp body:
+200 OK
 ```
 {
   "id" : uuid,
