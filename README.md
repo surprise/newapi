@@ -61,4 +61,5 @@ resp: 200 ok
     "variant" : "CLASSIC"
   } ],
   "capes" : [ ]
-}```
+}
+```
