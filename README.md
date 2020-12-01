@@ -65,3 +65,26 @@ resp: 200 ok
   "capes" : [ ]
 }
 ```
+
+**CHANGE NAME**
+
+PUT https://api.minecraftservices.com/minecraft/profile/name/wantedname
+
+200 OK
+
+bearer in headers
+
+resp body:
+```
+{
+  "id" : uuid,
+  "name" : new name,
+  "skins" : [ {
+    "id" : skinid?,
+    "state" : someshit,
+    "url" : skinurl,
+    "variant" : bodyshape
+  } ],
+  "capes" : [ ]
+}
+```
