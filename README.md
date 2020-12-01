@@ -2,7 +2,8 @@ Found by danktrain#0001 and Duff#8240 for the community and 3NAME Development an
 
 **NAME STATUS:**
 
-Method:GET 
+Method:GET
+
 URL: https://api.minecraftservices.com/minecraft/profile/name/asd/available
 
 You only have to send the bearer token aswell as the typical headers
@@ -32,6 +33,7 @@ if innappropriate:
 **ACCOUNT NAMECHANGE ELIGIBILITY:**
 
 Method:GET
+
 URL: https://api.minecraftservices.com/minecraft/profile/namechange
 
 You only have to send the bearer token aswell as the typical headers
@@ -49,6 +51,7 @@ Response Body when successful:
 **ACCOUNT DATA:**
 
 Method: GET
+
 URL: https://api.minecraftservices.com/minecraft/profile
 
 You only have to send the bearer token aswell as the typical headers
@@ -77,7 +80,7 @@ URL: https://api.minecraftservices.com/minecraft/profile/name/<name>
 
 You only have to send the bearer token aswell as the typical headers
 
-resp body:
+Response Body if the request is successful:
 200 OK
 ```
 {
@@ -90,6 +93,18 @@ resp body:
     "variant" : bodyshape
   } ],
   "capes" : [ ] //if someone with a cape account could do this and tell me it would be much appreciated
+}
+```
+
+Response Body if name was changed before 30 days:
+401 UNAUTHORIZED
+```
+{
+    "path": "/minecraft/profile/name/<NAME>",
+    "errorType": "UnauthorizedOperationException",
+    "error": "UnauthorizedOperationException",
+    "errorMessage": "Unauthorized",
+    "developerMessage": "Unauthorized"
 }
 ```
 
