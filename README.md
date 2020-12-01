@@ -54,13 +54,13 @@ resp: 200 ok
 
 ```
 {
-  "id" : "98540df05a854bddbc21199991e4ac60",
-  "name" : "ecksessdee",
+  "id" : uuid,
+  "name" : currentname,
   "skins" : [ {
-    "id" : "4732e446-365a-4fde-b1a2-d69b36a93115",
-    "state" : "ACTIVE",
-    "url" : "http://textures.minecraft.net/texture/ac4355918bd10032817f71066eb62acd452368aba32df9bff9968c0063656709",
-    "variant" : "CLASSIC"
+    "id" : skinid,
+    "state" : skinstate,
+    "url" : skinurl,
+    "variant" : bodytype
   } ],
   "capes" : [ ]
 }
@@ -85,6 +85,55 @@ resp body:
     "url" : skinurl,
     "variant" : bodyshape
   } ],
-  "capes" : [ ]
+  "capes" : [ ] //if someone with a cape account could do this and tell me it would be much appreciated
+}
+```
+
+**CHANGE SKIN**
+
+POST https://api.minecraftservices.com/minecraft/profile/skins/active
+
+200 OK
+
+bearer in headers
+
+payload: skin file
+
+resp body:
+```
+{
+  "id" : uuid,
+  "name" : new name,
+  "skins" : [ {
+    "id" : skinid?,
+    "state" : someshit,
+    "url" : skinurl,
+    "variant" : bodyshape
+  } ],
+  "capes" : [ ] //if someone with a cape account could do this and tell me it would be much appreciated
+}
+```
+
+**RESET SKIN**
+
+DELETE https://api.minecraftservices.com/minecraft/profile/skins/active
+
+200 OK
+
+bearer in headers
+
+resp body:
+```
+{
+  "id" : uuid,
+  "name" : new name,
+  "skins" : [ {
+    "id" : skinid,
+    "state" : skinstate,
+    "url" : skinurl,
+    "variant" : bodytype,
+    "alias" : officialnameofskin
+  } ],
+  "capes" : [ ] //if someone with a cape account could do this and tell me it would be much appreciated
 }
 ```
