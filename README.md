@@ -1,4 +1,4 @@
-Found by danktrain#0001 and Duff#8240 for the community and 3NAME Development and MCSniperPY
+Found by danktrain#0001 and Duff#8240 for the community, 3NAME Development, and MCSniperPY
 
 **NAME STATUS:**
 
