@@ -69,7 +69,14 @@ Response Body:
     "url" : skinurl,
     "variant" : bodytype
   } ],
-  "capes" : [ ]
+  "capes": [
+        {
+            "id": capeid,
+            "state": capestate,
+            "url": capetextureurl
+            "alias": commonnameforcape
+        }
+    ]
 }
 ```
 
@@ -92,7 +99,14 @@ Response Body if the request is successful:
     "url" : skinurl,
     "variant" : bodyshape
   } ],
-  "capes" : [ ] //if someone with a cape account could do this and tell me it would be much appreciated
+  "capes": [
+        {
+            "id": capeid,
+            "state": capestate,
+            "url": capetextureurl
+            "alias": commonnameforcape
+        }
+    ]
 }
 ```
 
@@ -129,7 +143,14 @@ resp body:
     "url" : skinurl,
     "variant" : bodyshape
   } ],
-  "capes" : [ ] //if someone with a cape account could do this and tell me it would be much appreciated
+  "capes": [
+        {
+            "id": capeid,
+            "state": capestate,
+            "url": capetextureurl
+            "alias": commonnameforcape
+        }
+    ]
 }
 ```
 
@@ -154,6 +175,12 @@ resp body:
     "variant" : bodytype,
     "alias" : officialnameofskin
   } ],
-  "capes" : [ ] //if someone with a cape account could do this and tell me it would be much appreciated
-}
+  "capes": [
+        {
+            "id": capeid,
+            "state": capestate,
+            "url": capetextureurl
+            "alias": commonnameforcape
+        }
+    ]
 ```
